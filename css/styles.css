@@ -1,0 +1,149 @@
+body{
+ margin: 0;
+}
+nav { 
+    padding: 30px;
+    height: 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;    
+}
+#navbar-pinterest{       
+    padding-left: 40px;
+    padding-right:70px ;
+    position: fixed;
+    z-index: 999;
+    background: white;    
+}
+.navbar-logo{    
+    height: 24px;
+}
+.navbar-btn-inicio{
+    padding: 15px;
+    background: black;
+    color:white;
+    border-radius: 30px;
+    font-size: 15px;
+    border-color: black;
+}
+.navbar-btn-hoy{
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+    background: white;
+    border-style: none;
+}
+.finder{
+    height: 50px;
+    width: 900px;
+    border-radius: 30px;
+    background: rgb(240, 240, 240);
+   border-style: none;
+   outline: none;
+   font-weight: bold;
+   position: relative;
+   padding-left: 50px;
+}
+.buscar-icono{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left:280px;
+    top: 30px;
+}
+.icono i{
+    font-size: 23px;
+    color: gray;
+}
+.card-image-image{
+    width: 100%;
+    border-radius: 20px;  
+}
+.imagenes{
+    display: flex;
+     
+    padding-top: 70px;
+    padding-left: 40px;
+    padding-right:40px ;
+}
+.columna{
+    flex:20%;
+    padding: 10px;   
+}
+.columna .card-image-image{    
+    margin-bottom:50px;
+}
+.columna-card{
+    position: relative;
+}
+.guardar{    
+    background-color:transparent;
+    padding: 15px;
+    color: transparent;  
+    border-style: none;
+    border-radius: 30px;     
+    position: absolute;
+    top: 15px;
+    left: 130px;   
+}
+.card-image-image:hover  {
+    cursor: zoom-in;
+    opacity: 0.4; 
+}
+.columna-card:hover .guardar{
+    background-color:rgb(219, 40, 40);
+    color: white;
+    font-weight: bold;
+}
+.guardar:hover{
+    cursor: pointer;
+    
+}
+.btn{
+    position: absolute;
+    padding: 10px;
+    border-style: none;  
+    top: 250px;
+    border-style: none;
+    border-radius: 50px;
+    font-weight: bold;
+    background: transparent;
+    color: transparent;
+}
+.pagina{left: 5px;}
+.enviar{left:150px ;}
+.otros{left:185px;}
+
+.columna-card:hover .btn{
+    color:black;
+    background: rgb(235, 235, 235);
+}
+@media(max-width:1024px){
+    .columna{
+        flex:20%;
+        padding: 10px;   
+    }
+}
+@media(max-width:768px){
+    .columna{
+        flex:40%;
+        padding: 10px;   
+    }
+}
+@media(max-width:480px){
+    .columna{
+        flex:60%;
+        padding: 10px;   
+    }
+}
+@media(max-width:320px){
+    .columna{
+        flex:100%;
+        padding: 10px;   
+    }
+}
+    
+
+
+
